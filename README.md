@@ -1,6 +1,12 @@
 # QuantIR
 
-# PLSC-309-SP23
+Quantitative Analysis in International Relations
+
+Quantitative Analysis in International Politics
+
+Special Issues in Quantitative Analysis in International Politics 
+
+Advanced Research on Quantitative Analysis in International Politics
 
 [Syllabus](https://github.com/hknd23/)
 
