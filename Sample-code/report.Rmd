@@ -1,0 +1,72 @@
+---
+title: "Writing Reports with R Markdown"
+output: html_document
+date: "2023-04-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Here I use and message=FALSE adn warning = FALSE to hide the message lines. 
+```{r import data and libraries , message=FALSE, warning=FALSE}
+OilWomen<-read.csv('https://raw.githubusercontent.com/hknd23/PLSC-309-SP23/main/Data/oilwomen.csv')
+library(devtools)
+install_github('hknd23/MarginalEffectsPlots')
+library(MarginalEffectsPlots)
+library(stargazer)
+```
+
+## R Markdown
+In this study, I want to look at the effect of economic growth, oil exports, and having Islam as major religion on women representation. 
+
+First, I notice that GDP per capita is right-skewed, so I take the logarithm of the variable so that it looks "normal":
+
+```{r log}
+hist(OilWomen$gdpcap2000)
+OilWomen$logGDP<-log(OilWomen$gdpcap2000)
+hist(OilWomen$logGDP)
+
+```
+
+
+Now, I want to look at the descriptive statistics of my main variables
+
+```{r descriptives}
+summary(OilWomen[,c('female_seats','polity','oil','zislam','logGDP','gdpcap2000','PR')])
+```
+
+## Including Plots
+
+Third, I use some visualization to show some data trends
+
+```{r plots}
+hist(OilWomen$female_seats)
+barplot(table(OilWomen$zislam))
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r scatterplot, echo=FALSE}
+plot(OilWomen$polity,OilWomen$female_seats,xlab = "Polity",ylab = "Female Seats")
+abline(lm(female_seats~polity,data=OilWomen))
+```
+
+I now want to run two linear regression models: 
+
+```{r linear models}
+model2<-lm(female_seats~logGDP+polity+oil,data=OilWomen)
+model3<-lm(female_seats~polity+oil+zislam*logGDP+PR,data=OilWomen)
+summary(model2)
+summary(model3)
+
+```
+
+With an interaction term, let's use the plotting functions to interpret them more easily
+
+```{r marginal effects}
+meggplot(model3,'logGDP','zislam')
+meggplot(model3,'zislam','logGDP')
+```
+
+After I'm done writing the report, I can use File > Knit Document to produce my report.
