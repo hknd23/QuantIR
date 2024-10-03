@@ -60,7 +60,7 @@ Sequence <- 1:10
 
 Sales <- c(1, 3, 4, 6, 2, 9)
 
-#Vector that contains both string and numbers will convert all to numbers
+#Vector that contains both string and numbers will convert all to character
 
 Books <- c(1,"two","ten", 1.3)
 
