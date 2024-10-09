@@ -1,0 +1,16 @@
+ISO3,Country,Capital,SubSaharan,PopulationDens,POLITYDemocracy,Conflict,HIV,WomenInParl,Regime Type
+TUN,Tunisia,Tunis,0,74.4,7,0,0.1,31.3,Democracy
+DZA,Algeria,Algiers,0,16.6,2,1,0.1,31.6,Mixed
+MAR,Morocco,Rabat,0,77.7,-4,0,0.1,17,Mixed
+LBY,Libya,Tripoli,0,3.52,0,1,0.1,16,Mixed
+SDN,Sudan,Khartoum,1,20.4,-4,0,0.1,30.5,Mixed
+ERI,Eritrea,Asmara,1,27.6,-7,0,0.7,22,Autocracy
+SEN,Senegal,Dakar,1,74.6,7,0,0.4,42.7,Democracy
+MLI,Mali,Bamako,1,14.8,5,1,1.1,8.84,Mixed
+NER,Niger,Niamey,1,15.9,6,1,0.3,13.3,Democracy
+GMB,"Gambia, The",Banjul,1,223,-5,0,1.8,9.43,Mixed
+BFA,Burkina Faso,Ouagadougou,1,68.4,6,0,0.9,9.45,Democracy
+TCD,Chad,N'Djamena,1,11.2,-2,1,1.4,14.9,Mixed
+GNB,Guinea-Bissau,Bissau,1,63.6,6,0,3.3,13.7,Democracy
+GIN,Guinea,Conakry,1,47.3,4,0,1.6,21.9,Mixed
+NGA,Nigeria,Abuja,1,202,7,1,NA,5.56,Democracy
