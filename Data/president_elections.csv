@@ -1,0 +1,20 @@
+year,ch_gdp,unemployment,incumbent_candidate,incumbent_party,incumbent_name,challenger_name,approval,incumbent,incumbent_vote
+2020,-0.84034,11.1,Trump,Republican,Trump,Biden,43,1,0.477301651
+2016,0.617204341,4.9,H. Clinton,Democrat,H. Clinton,Trump,51,0,52.22643979
+2012,1.636825622,8.2,Obama,Democrat,Obama,Romney,47,1,53.92903863
+2008,0.137280303,5.6,Obama,Republican,McCain,Obama,28,0,42.62331142
+2004,3.269449956,5.6,GWB,Republican,GWB,Kerry,48,1,52.48826252
+2000,4.125390451,4,Gore,Democrat,Gore,GWB,55,0,50.53945601
+1996,2.801057003,5.3,B. Clinton,Democrat,B. Clinton,Dole,52,1,59.47052664
+1992,1.812320529,7.8,B. Clinton,Republican,GHWB,B. Clinton,38,1,43.09016188
+1988,3.545936649,5.4,GHWB,Republican,GHWB,Dukakis,48,0,57.80311734
+1984,7.058432935,7.2,Reagan,Republican,Reagan,Mondale,53,1,68.33923949
+1980,-1.931337618,7.6,Reagan,Democrat,Carter,Reagan,31,1,39.38931712
+1976,5.13681448,7.6,Carter,Republican,Ford,Carter,45,1,47.89542866
+1972,4.112932753,5.7,Nixon,Republican,Nixon,McGovern,56,1,73.57221979
+1968,4.460186278,3.7,Nixon,Democrat,Humphrey,Nixon,40,0,49.18810729
+1964,4.708912931,5.2,Johnson,Democrat,Johnson,Goldwater,74,1,72.69160479
+1960,-0.02214349,5.4,JFK,Republican,Nixon,JFK,57,0,49.83487719
+1956,0.622801453,4.3,Ike,Republican,Ike,Stevenson,73,1,65.5033028
+1952,1.82239479,3,Ike,Democrat,Stevenson,Ike,32,0,39.09622212
+1948,2.794128076,3.6,Truman,Democrat,Truman,Dewey,40,1,54.73906155
